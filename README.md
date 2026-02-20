@@ -291,3 +291,130 @@ This roadmap is divided into **3 monthly sprints**:
 ```
 
 **Consistency beats intensity spikes. Follow the plan daily for all 90 days.**
+
+---
+
+## 💡 Extra Full-Stack Project Ideas (Build More Than 1 Capstone)
+
+| Project | Core Features | Suggested Stack | Engineering Skills You Gain |
+|---|---|---|---|
+| **E-Commerce Lite** | Auth, product catalog, cart, checkout flow, admin CRUD | Next.js, Node/Express, PostgreSQL, Prisma, Stripe test mode | Payments flow, relational data, role-based access |
+| **Job Board Platform** | Job posting, filters, company dashboard, saved jobs | React/Next.js, Express, PostgreSQL, Redis (optional) | Search/filtering, pagination, caching basics |
+| **Team Task Manager** | Projects, Kanban board, comments, activity log | Next.js, Prisma, PostgreSQL, Socket.io | Realtime updates, collaboration patterns |
+| **Learning Management App** | Courses, lessons, progress tracking, quizzes | React, Node, PostgreSQL, JWT | Complex data modeling, user progress logic |
+| **Expense Tracker SaaS** | Transactions, budgets, analytics charts, exports | Next.js, Express, PostgreSQL, Chart.js | Data aggregation, reporting, dashboard UX |
+| **Booking System** | Availability calendar, booking, cancellation, reminders | Next.js, Node, PostgreSQL | Date/time logic, transactional workflows |
+| **Social Mini-App** | Profiles, posts, likes, comments, follow system | React, Express, PostgreSQL, Cloudinary | Feed design, media upload, moderation basics |
+| **Support Ticket System** | Tickets, statuses, priorities, assignment, audit log | Next.js, Node, Prisma, PostgreSQL | Workflow/state machine thinking, ops tooling |
+
+**Rule:** Pick at least **2 extra projects** after Day 90 and ship them publicly.
+
+---
+
+## 🧱 Full-Stack Engineer Skill Map (Must-Have)
+
+### 1) Frontend Engineering
+- [ ] Build responsive UI without templates
+- [ ] Handle loading/error/empty/skeleton states
+- [ ] Use reusable component patterns
+- [ ] Optimize performance (memoization, code-splitting, image optimization)
+- [ ] Write basic frontend tests (critical paths)
+
+### 2) Backend Engineering
+- [ ] Design REST APIs with clean route/controller/service layers
+- [ ] Validate inputs and return consistent error responses
+- [ ] Implement auth (JWT/session) and authorization (RBAC)
+- [ ] Build pagination, filtering, sorting, search
+- [ ] Add logging and central error handling
+
+### 3) Database Engineering
+- [ ] Design normalized schemas with indexes
+- [ ] Model one-to-one, one-to-many, many-to-many relations
+- [ ] Write safe migrations and seed scripts
+- [ ] Prevent N+1 query issues
+- [ ] Backup and restore basics
+
+### 4) DevOps & Deployment
+- [ ] Dockerize app and database locally
+- [ ] Manage environment variables securely
+- [ ] Configure CI checks (lint, test, build)
+- [ ] Deploy frontend + backend + DB and verify health
+- [ ] Use domain + HTTPS and monitor uptime
+
+### 5) Quality & Security
+- [ ] Input validation on both client and server
+- [ ] Password hashing and token expiration strategy
+- [ ] CORS, rate limiting, and secure headers
+- [ ] Basic OWASP awareness (XSS, SQLi, CSRF)
+- [ ] Test core business logic and auth flows
+
+### 6) Professional Engineering Habits
+- [ ] Write clear README and API docs
+- [ ] Open PRs with meaningful descriptions
+- [ ] Keep commits atomic and readable
+- [ ] Track bugs/tasks in issues/projects
+- [ ] Communicate tradeoffs in architecture decisions
+
+---
+
+## 🏗️ System Design Basics for Full-Stack Developers
+
+| Topic | What to Learn | Practice Exercise |
+|---|---|---|
+| API Design | Resources, versioning, status codes | Design API for Task Manager |
+| Caching | Browser cache, server cache, Redis basics | Cache public dashboard data |
+| Scaling | Vertical vs horizontal scaling | Split monolith into service modules |
+| Queues/Async Jobs | Background jobs and retries | Email notification worker mock |
+| File Storage | Local vs cloud storage patterns | Avatar upload with signed URLs |
+| Observability | Logs, metrics, tracing basics | Add request IDs + structured logs |
+
+---
+
+## ✅ Production-Ready Checklist (Before You Ship)
+
+- [ ] Linting + formatting pass completed
+- [ ] No secrets in code or git history
+- [ ] Error handling in all critical API routes
+- [ ] Loading and error states in all critical UI pages
+- [ ] Database migrations run successfully in production
+- [ ] Health endpoint available (`/health`)
+- [ ] Basic rate limit and security headers enabled
+- [ ] README includes setup, env vars, architecture, screenshots
+- [ ] Demo video or GIF recorded
+- [ ] Post-launch bug list created
+
+---
+
+## 📁 Suggested Repository Structure (Professional)
+
+```text
+project-root/
+  apps/
+    web/                 # Next.js frontend
+    api/                 # Express backend
+  packages/
+    ui/                  # Shared components (optional)
+    config/              # Shared eslint/tsconfig (optional)
+  prisma/
+    schema.prisma
+    migrations/
+  docs/
+    architecture.md
+    api-spec.md
+    decisions.md
+  .github/
+    workflows/ci.yml
+  README.md
+```
+
+---
+
+## 🎯 Career Upgrade Targets (Post-90 Days)
+
+- Build **3 production-style full-stack projects** total
+- Publish **1 technical article per project** (architecture + lessons learned)
+- Solve **150+ DSA problems** with revision notes
+- Complete **20+ mock interview questions** (JS, React, Node, SQL, system design)
+- Contribute **at least 1 pull request** to open source
+
+**If you can build, test, deploy, monitor, and explain your system decisions, you are operating like a full-stack engineer.**
